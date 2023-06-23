@@ -1,5 +1,17 @@
 <?php
-include ('connection.php'); ?>
+include ('connection.php' ); ?>
+<?php session_start();
+$_SESSION['id']=$id;
+$_SESSION['username']=$username;
+$_SESSION['email']=$email;
+$_SESSION['age']=$age;
+$_SESSION['continent']=$continent;
+$_SESSION['password']=$oldpassword;
+$_SESSION['newpassword']=$newpassord;
+$_SESSION['confirmpassword']=$confirmpassword;
+$url="profile.php";
+?>
+
 <?php
 if(!isset($SESSION)){
     session_start(); }
